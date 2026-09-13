@@ -69,22 +69,6 @@ loaded_model = joblib.load("model.pkl")
 
 st.header("Prediction")
 
-import joblib
-
-loaded_model = joblib.load("model.pkl")
-
-st.header("Prediction")
-
-age = st.number_input("Age", min_value=18, max_value=100, value=30)
-
-tenure = st.number_input("Tenure", min_value=0, max_value=100, value=10)
-
-satisfaction = st.slider("Satisfaction Score", min_value=1, max_value=5, value=3)
-
-complain = st.selectbox("Complain", [0, 1])
-
-order_count = st.number_input("Order Count", min_value=0, max_value=300, value=10)
-
 age = st.number_input("Age", min_value=18, max_value=100, value=30)
 
 tenure = st.number_input("Tenure", min_value=0, max_value=100, value=10)
